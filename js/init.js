@@ -14,8 +14,8 @@
 //			'wide': { range: '-1680', href: 'css/style-wide.css' },
 //			'normal': { range: '-1280', href: 'css/style-normal.css' },
 //			'mobile': { range: '-736', href: 'css/style-mobile.css' },
-//			'mobilep': { range: '-480', href: 'css/style-mobilep.css' }
-//            'mobilep': {media: '(max-height: 600px)', href: 'css/style-mobilep.css'}
+          'extrasmall': {media: '(max-height: 533px)', href: 'css/style-extrasmall.css'},
+          'wide': {media: '(max-height: 320px)', href: 'css/style-wide.css'}
 		},
         
         viewport: {
