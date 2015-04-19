@@ -520,11 +520,12 @@
 */
 
 /* extra small screen */
-
+/*
 @media screen and (max-height: 600px) {
     #logo {
-/*        border: 2px red solid*/
+        border: 2px red solid
         height: 100px;
     }
 
 }
+*/
