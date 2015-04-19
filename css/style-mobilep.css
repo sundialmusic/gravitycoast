@@ -21,3 +21,9 @@
 	#header nav {
 		padding: 0 1em;
 	}
+/* Logo */
+
+    #logo {
+        border: 2px red solid;
+        height: 100px;
+    }
