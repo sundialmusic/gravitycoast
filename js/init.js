@@ -16,6 +16,9 @@
 //			'mobile': { range: '-736', href: 'css/style-mobile.css' },
 //			'mobilep': { range: '-480', href: 'css/style-mobilep.css' }
 //		}+
+        viewport: {
+            width: 520
+        }
 	});
 
 	// Events (JS).
