@@ -29,7 +29,7 @@
 	body {
 		background: $color-bg;
 		overflow: hidden;
-		
+		height: 100%;
 		&.loading{
 			* {
 				@include vendor-property('animation', 'none !important');
@@ -69,12 +69,12 @@
 
 	#wrapper {
 		@include vendor-property('animation', 'wrapper #{$duration-wrapper} forwards');
-		height: 100%;
+    height: 100%;
 		left: 0;
 		opacity: 0;
-		position: fixed;
 		top: 0;
 		width: 100%;
+    overflow-x: hidden;
 	}
 
 /* BG */
@@ -122,12 +122,13 @@
 /* Main */
 
 	#main {
-		height: 100%;
 		left: 0;
-		position: fixed;
 		text-align: center;
 		top: 0;
 		width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 3%;
 
 		// &:before {
 		// 	content: '';
@@ -177,7 +178,10 @@
 			opacity: 0.75;
 		}
 		
-		nav {
+		
+	}
+	
+	nav {
 			margin: 1.5em 0 0 0;
 
 			li {
@@ -243,8 +247,6 @@
 				}
 			}
 		}
-	}
-	
 /* Footer */
 
 	#footer {
@@ -259,7 +261,7 @@
 		width: 100%;
 	}
 
-	#logo {
+#logo {
     background: url('images/gravity.coast.web.cassette3.png') no-repeat;
     background-size: cover;
     height: 312px;
@@ -272,6 +274,18 @@
     z-index: 2;
     */
 }
+
+#content {
+    position: relative;
+/*
+    padding-top: 100px;
+*/
+    padding-bottom: 100px;
+
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
 
 #player {
 
@@ -294,3 +308,11 @@
     width: 100%;
     height: 100%;
 }
+
+#buttons {
+    z-index: 5;
+    border-bottom: 5px;
+/*    width: 600px;*/
+/*    margin: 0 auto;*/
+}
+
