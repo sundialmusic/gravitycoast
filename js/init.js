@@ -21,26 +21,27 @@
       //   media: '(max-height: 320px)',
       //   href: 'css/style-wide.css'
       // }
-      'wide': {
-        media: '(min-width: 1000px)',
-        href: 'css/style-wide.css'
-      },
+
       'narrow': {
         media: '(max-width: 600px)',
         href: 'css/style-narrow.css'
       },
       'short': {
-        media: '(max-height: 520px)',
+        media: '(max-height: 475px)',
         href: 'css/style-short.css'
       },
       'tall': {
         media: '(min-height: 780px)',
         href: 'css/style-tall.css'
+      },
+      'wide': {
+        media: '(min-width: 1000px)',
+        href: 'css/style-wide.css'
       }
     },
 
     viewport: {
-      width: 520,
+      width: 520, // 770
       scalable: false
     }
   });
