@@ -1,0 +1,6 @@
+@import 'vars';
+@import 'mixins';
+
+/* BG */
+
+  @include bg($bg-width * 0.2);

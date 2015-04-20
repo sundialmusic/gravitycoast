@@ -12,6 +12,10 @@
 @import 'mixins';
 
 /* Basic */
+  html {
+      height: 100%;
+      width: 100%;
+  }
 
 	body, input, select, textarea {
 		color: $color-fg;
@@ -91,7 +95,7 @@
 		top: 0;
 	}
 
-	@include bg($bg-width * 1.5);
+	@include bg($bg-width * .7);
 
 /* Overlay */
 
@@ -254,3 +258,39 @@
 		text-align: center;
 		width: 100%;
 	}
+
+	#logo {
+    background: url('images/gravity.coast.web.cassette3.png') no-repeat;
+    background-size: cover;
+    height: 312px;
+    width: 489px;
+    margin: 0 auto;
+    z-index: 5;
+    /*
+    margin-top: 5%;
+    position: relative;
+    z-index: 2;
+    */
+}
+
+#player {
+
+    background-size: cover;
+    min-height: 115px;
+    height: 115px;
+    width: 489px;
+    margin: 0 auto;
+    padding-bottom: none;
+    z-index: 6;
+/*    position: relative;
+    bottom: 200px;*/
+            /*
+    position: relative;
+    z-index: 2;
+    */
+}
+
+#player iframe {
+    width: 100%;
+    height: 100%;
+}
