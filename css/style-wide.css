@@ -5,12 +5,12 @@
 */
 
 /* Basic */
-
+/*
 	body, input, select, textarea {
 		font-size: 13pt;
 	}
-
-/* BG */
+*/
+/* BG 1500px */
 	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-1500px,0,0); -webkit-transform: translate3d(-1500px,0,0); -o-transform: translate3d(-1500px,0,0); -ms-transform: translate3d(-1500px,0,0); transform: translate3d(-1500px,0,0); } }
 	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-1500px,0,0); -webkit-transform: translate3d(-1500px,0,0); -o-transform: translate3d(-1500px,0,0); -ms-transform: translate3d(-1500px,0,0); transform: translate3d(-1500px,0,0); } }
 	@-o-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-1500px,0,0); -webkit-transform: translate3d(-1500px,0,0); -o-transform: translate3d(-1500px,0,0); -ms-transform: translate3d(-1500px,0,0); transform: translate3d(-1500px,0,0); } }
@@ -18,17 +18,15 @@
 	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-1500px,0,0); -webkit-transform: translate3d(-1500px,0,0); -o-transform: translate3d(-1500px,0,0); -ms-transform: translate3d(-1500px,0,0); transform: translate3d(-1500px,0,0); } }
 
 	#bg {
-		background-size: 480px auto; /* 1500px auto; */
-		width: 2880px; /*4500px;*/
+		background-size: 1500px auto;
+		width: 4500px;
 	}
-        #logo {
+
+/*        #logo {
           width: 348px;
           height: 256px;
-/*        border: 2px red solid;*/
-/*        height: 100px;*/
     }
     #player {
-/*        opacity:.5;*/
         top: -300px;
         z-index: 2;
     }
@@ -36,3 +34,4 @@
     .icon {
 		font-size: 110%;
 	}
+*/

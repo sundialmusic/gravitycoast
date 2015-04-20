@@ -1,4 +1,3 @@
-
 /*
 	Aerial by HTML5 UP
 	html5up.net | @n33co
@@ -7,40 +6,63 @@
 
 (function() {
 
-	skel.init({
-//		reset: 'full',
-		breakpoints: {
-//			'global': { range: '*', href: 'css/style.css', viewport: { scalable: false } },
-//			'wide': { range: '-1680', href: 'css/style-wide.css' },
-//			'normal': { range: '-1280', href: 'css/style-normal.css' },
-//			'mobile': { range: '-736', href: 'css/style-mobile.css' },
-          'extrasmall': {media: '(max-height: 533px)', href: 'css/style-extrasmall.css'},
-          'wide': {media: '(max-height: 320px)', href: 'css/style-wide.css'}
-		},
-        
-        viewport: {
-            width: 520
-        }
-	});
+  skel.init({
+    //		reset: 'full',
+    breakpoints: {
+      //			'global': { range: '*', href: 'css/style.css', viewport: { scalable: false } },
+      //			'wide': { range: '-1680', href: 'css/style-wide.css' },
+      //			'normal': { range: '-1280', href: 'css/style-normal.css' },
+      //			'mobile': { range: '-736', href: 'css/style-mobile.css' },
+      // 'extrasmall': {
+      //   media: '(max-height: 533px)',
+      //   href: 'css/style-extrasmall.css'
+      // },
+      // 'wide': {
+      //   media: '(max-height: 320px)',
+      //   href: 'css/style-wide.css'
+      // }
+      'wide': {
+        media: '(min-width: 1000px)',
+        href: 'css/style-wide.css'
+      },
+      'narrow': {
+        media: '(max-width: 600px)',
+        href: 'css/style-narrow.css'
+      },
+      'short': {
+        media: '(max-height: 520px)',
+        href: 'css/style-short.css'
+      },
+      'tall': {
+        media: '(min-height: 780px)',
+        href: 'css/style-tall.css'
+      }
+    },
 
-	// Events (JS).
-		
-		// Remove "loading" class once the page has fully loaded.
-			window.onload = function() {
-				document.body.className = '';
-			}
+    viewport: {
+      width: 520,
+      scalable: false
+    }
+  });
 
-		// Prevent scrolling on touch.
-//			window.ontouchmove = function() {
-//				return false;
-//			}
+  // Events (JS).
 
-		// Fix scroll position on orientation change.
-			window.onorientationchange = function() {
-				document.body.scrollTop = 0;
-			}
+  // Remove "loading" class once the page has fully loaded.
+  window.onload = function() {
+    document.body.className = '';
+  }
 
-	/*
+  // Prevent scrolling on touch.
+  //			window.ontouchmove = function() {
+  //				return false;
+  //			}
+
+  // Fix scroll position on orientation change.
+  window.onorientationchange = function() {
+    document.body.scrollTop = 0;
+  }
+
+  /*
 
 	// Events (jQuery).
 	// Aerial doesn't need jQuery, but if you're going to use it anyway remove the
