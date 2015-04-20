@@ -21,3 +21,18 @@
 	#header nav {
 		padding: 0 1em;
 	}
+/* Logo */
+
+    #logo {
+        border: 2px blue solid;
+    }
+    
+    #player {
+        height: 150px;
+        padding-bottom: 20px;
+    }
+
+    
+    .icon {
+		font-size: 110%;
+	}
