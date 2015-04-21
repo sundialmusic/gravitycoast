@@ -27,7 +27,7 @@
         href: 'css/style-narrow.css',
       },
       'short': {
-        media: '(max-height: 475px);,
+        media: '(max-height: 475px)',
 //          and (max-width: 670px)',
         href: 'css/style-short.css'
       },
