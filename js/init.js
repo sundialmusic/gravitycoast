@@ -6,7 +6,7 @@
 
 (function() {
 
-  skel.init({
+  skel.init({    
     //		reset: 'full',
     breakpoints: {
       //			'global': { range: '*', href: 'css/style.css', viewport: { scalable: false } },
@@ -23,26 +23,29 @@
       // }
 
       'narrow': {
-        media: '(max-width: 600px)',
-        href: 'css/style-narrow.css'
+        media: '(max-width: 540px)',  //600
+        href: 'css/style-narrow.css',
       },
       'short': {
-        media: '(max-height: 475px)',
+        media: '(max-height: 475px);,
+//          and (max-width: 670px)',
         href: 'css/style-short.css'
       },
       'tall': {
-        media: '(min-height: 780px)',
-        href: 'css/style-tall.css'
+        media: '(min-height: 1000px)', //780
+        href: 'css/style-tall.css',
+//        viewport: '(width: 520)'
       },
       'wide': {
-        media: '(min-width: 1000px)',
+        media: '(min-width: 1000px)', 
         href: 'css/style-wide.css'
+//        viewport: '(height: 700) and (width: 900)'      
       }
     },
-
+    
     viewport: {
-      width: 520, // 770
-      scalable: false
+    width: 520, // 770
+    scalable: false
     }
   });
 
