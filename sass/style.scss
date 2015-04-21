@@ -256,13 +256,13 @@ ul {
 //		@include vendor-value('background-image', 'linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%)');
 		bottom: 5px;
 		cursor: default;
-		height: 6em;
+//		height: 6em;
 		left: 0;
-		line-height: 8em;
+		line-height: 2em;
 		position: absolute;
 		text-align: center;
 		width: 100%;
-        opacity: .5;
+        opacity: .75;
 	}
 
 #logo {
