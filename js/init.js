@@ -37,14 +37,26 @@
 //        viewport: '(width: 520)'
       },
       'wide': {
-        media: '(min-width: 1000px)', 
-        href: 'css/style-wide.css'
-//        viewport: '(height: 700) and (width: 900)'      
-      }
+        media: '(min-width: 1024px)', 
+        href: 'css/style-wide.css',
+        viewport: {
+            width: 'device-width', // 'device-width', //770
+            scalable: false
+        }  
+      },
+        
+      'portrait': {
+        media: '(min-width: 768px) and (max-width: 1023px)', 
+        href: 'css/style-wide.css',
+        viewport: {
+            width: 'device-width', // 'device-width', //770
+            scalable: false
+        }    
+      }    
     },
-    
+    pollOnce: true,
     viewport: {
-    width: 520, // 770
+    width: 520, // 'device-width', //770
     scalable: false
     }
   });
