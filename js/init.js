@@ -6,7 +6,7 @@
 
 (function() {
 
-  skel.init({
+  skel.init({    
     //		reset: 'full',
     breakpoints: {
       //			'global': { range: '*', href: 'css/style.css', viewport: { scalable: false } },
@@ -21,27 +21,43 @@
       //   media: '(max-height: 320px)',
       //   href: 'css/style-wide.css'
       // }
-      'wide': {
-        media: '(min-width: 1000px)',
-        href: 'css/style-wide.css'
-      },
+
       'narrow': {
-        media: '(max-width: 600px)',
-        href: 'css/style-narrow.css'
+        media: '(max-width: 540px)',  //600
+        href: 'css/style-narrow.css',
       },
       'short': {
-        media: '(max-height: 520px)',
+        media: '(max-height: 475px)',
+//          and (max-width: 670px)',
         href: 'css/style-short.css'
       },
       'tall': {
-        media: '(min-height: 780px)',
-        href: 'css/style-tall.css'
-      }
+        media: '(min-height: 1000px)', //780
+        href: 'css/style-tall.css',
+//        viewport: '(width: 520)'
+      },
+      'wide': {
+        media: '(min-width: 1024px)', 
+        href: 'css/style-wide.css',
+        viewport: {
+            width: 'device-width', // 'device-width', //770
+            scalable: false
+        }  
+      },
+        
+      'portrait': {
+        media: '(min-width: 768px) and (max-width: 1023px)', 
+        href: 'css/style-wide.css',
+        viewport: {
+            width: 'device-width', // 'device-width', //770
+            scalable: false
+        }    
+      }    
     },
-
+    pollOnce: true,
     viewport: {
-      width: 520,
-      scalable: false
+    width: 520, // 'device-width', //770
+    scalable: false
     }
   });
 

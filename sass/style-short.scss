@@ -1,5 +1,21 @@
+@import 'mixins';
+
 #logo {
-  height: 100px;
+  background-image: url(images/gravity.coast.cassette.web.short.png);
+  height: 156px;
+}
+
+#main {
+    padding-top: 0;
+}
+
+#buttons {
+    nav {
+        li {
+            @include vendor-property('animation', 'none');
+            opacity: 1;
+        }
+    }
 }
 
 /*.icon {
