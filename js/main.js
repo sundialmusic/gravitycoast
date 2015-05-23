@@ -20,7 +20,7 @@ function contactForm() {
 
 			//Under Construction (write to file)
 			$('.join-us').click(function(){
-				var $this = $(this);
+				var $this = $(this);s
 				$this.closest('.under-construction').submit(function(e) {
 					e.preventDefault();
 					$.ajax({
