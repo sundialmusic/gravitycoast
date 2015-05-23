@@ -210,13 +210,27 @@ input[for=email]
     margin-top: 4px;
     font-size: 10pt !important;
 }
+ ////////////////////
+//  Contact Form  //
+///////////////////
 
+.contact, textarea, input {
+    width: 489px;
+    color: #666666;
+    margin: 0 auto;
+}
 
-//    #mc_embed_signup {
-//        height: 100%;
-//        width: 100%;
-//        background-color: aqua;
-//    }
+input[for=submit] 
+{
+    width:150px;
+}
+
+.contact-comment , textarea{
+    height: 110px;
+    max-height: 150px;
+    max-width: 489px;
+    min-width: 489px;
+}
 
 /* Header */
 
@@ -373,7 +387,7 @@ ul {
 
     background-size: cover;
     min-height: 115px;
-    height: 320px;
+//    height: 320px;
     width: 489px;
     margin: 0 auto;
     padding-bottom: none;
