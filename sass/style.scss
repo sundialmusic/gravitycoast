@@ -7,6 +7,8 @@
 @charset 'UTF-8';
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
 @import url('font-awesome.min.css');
+@import url('fonts/strasua.ttf');
+@import url('fonts/alienleagueiibold.ttf');
 
 @import 'vars';
 @import 'mixins';
@@ -16,12 +18,23 @@
       height: 100%;
       width: 100%;
   }
+    
+@font-face {
+    font-family: strasua;
+    src: url(fonts/strasua.ttf);
+}
+@font-face {
+    font-family: alien-league;
+    src: url(fonts/alienleagueiibold.ttf);
+}
 
 	body, input, select, textarea {
 		color: $color-fg;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 15pt;
-		font-weight: 300 !important;
+//		font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'strasua';
+//        font-family: 'alien-league';
+		font-size: 12pt;
+		font-weight: 100 !important;
 		letter-spacing: -0.025em;
 		line-height: 1.5em;
 	}
