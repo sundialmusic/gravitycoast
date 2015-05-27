@@ -7,9 +7,6 @@
 @charset 'UTF-8';
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
 @import url('font-awesome.min.css');
-@import url('fonts/strasua.ttf');
-@import url('fonts/alienleagueiibold.ttf');
-
 @import 'vars';
 @import 'mixins';
 
@@ -19,26 +16,43 @@
       width: 100%;
   }
     
+//change placeholder text of contact forms etc. //
+
+::-webkit-input-placeholder {
+   color: #FFF;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #FFF;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #FFF;  
+}
+
+:-ms-input-placeholder {  
+   color: #FFF;  
+}
+
 @font-face {
     font-family: strasua;
     src: url(fonts/strasua.ttf);
 }
-@font-face {
-    font-family: alien-league;
-    src: url(fonts/alienleagueiibold.ttf);
-}
+//@font-face {
+//    font-family: alien-league;
+//    src: url(fonts/alienleagueiibold.ttf);
+//}
 
 	body, input, select, textarea {
 		color: $color-fg;
 //		font-family: 'Source Sans Pro', sans-serif;
         font-family: 'strasua';
-//        font-family: 'alien-league';
 		font-size: 12pt;
-		font-weight: 100 !important;
-		letter-spacing: -0.025em;
-		line-height: 1.5em;
+		font-weight: 50 !important;
+		letter-spacing: .175em;
+		line-height: 1.0em;
 	}
-	
+	   
 	body {
 		background: $color-bg;
 //		overflow: hidden;
@@ -222,28 +236,51 @@ input[for=email]
     text-align: center;
     margin-top: 4px;
     font-size: 10pt !important;
+    color: #FFF;
 }
  ////////////////////
-//  Contact Form  //
+//  Contact Forms //
 ///////////////////
 
 .contact, textarea, input {
     width: 489px;
-    color: #666666;
+    color: #FFF;
     margin: 0 auto;
+    background-color: transparent;
 }
 
 input[for=submit] 
 {
     width:150px;
+    background-color: transparent;
+    color: #FFF;
 }
 
-.contact-comment , textarea{
+//input[for=text] 
+//{
+//    color: #000;
+//}
+
+.contact-comment, textarea{
+    background-color: transparent;
     height: 110px;
     max-height: 150px;
     max-width: 489px;
     min-width: 489px;
+    color: #000;
 }
+
+//***********************************************//
+//textarea {
+//    input {
+//    color: #000;
+//    }
+//    
+//}
+
+//#contactform {
+//    color: #000;
+//}
 
 /* Header */
 
@@ -371,7 +408,7 @@ ul {
 	}
 
 #logo {
-    background: url('images/gravity.coast.web.cassette3.png') no-repeat;
+    background: url('images/gravity-coast-web-cassette-black-big.png') no-repeat;
     background-size: cover;
     height: 312px;
     width: 489px;
