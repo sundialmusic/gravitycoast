@@ -21,28 +21,58 @@
       //   media: '(max-height: 320px)',
       //   href: 'css/style-wide.css'
       // }
-      'wide': {
-        media: '(min-width: 1000px)',
-        href: 'css/style-wide.css'
+        'ipad': {
+        media: '(max-width: 1024px)',
+        media: '(min-width: 768px)',
+        href: 'css/ipad.css',
+        viewport: {
+            width: 768,
+            scalable: false
+        }
       },
-      'narrow': {
-        media: '(max-width: 600px)',
-        href: 'css/style-narrow.css'
+        
+        'phone-portrait': {
+//        media: '(max-height: 736px)',
+        media: '(max-width: 414px)',
+        href: 'css/phone-portrait.css',
+            viewport: {
+            width: 520,
+            scalable: false
+        }
       },
-      'short': {
-        media: '(max-height: 520px)',
-        href: 'css/style-short.css'
+//        
+        'phone-landscape': {
+        media: '(min-width: 480px)',
+        media: '(max-height: 414px)',
+        href: 'css/phone-landscape.css',
+            viewport: {
+            width: 520,
+            scalable: false
+        }
       },
-      'tall': {
-        media: '(min-height: 780px)',
-        href: 'css/style-tall.css'
-      }
-    },
-
-    viewport: {
-      width: 520,
-      scalable: false
+        
+//      'wide': {
+//        media: '(min-width: 1000px)',
+//        href: 'css/style-wide.css'
+//      },
+//      'narrow': {
+//        media: '(max-width: 600px)',
+//        href: 'css/style-narrow.css'
+//      },
+//      'short': {
+//        media: '(max-height: 520px)',
+//        href: 'css/style-short.css'
+//      },
+//      'tall': {
+//        media: '(min-height: 780px)',
+//        href: 'css/style-tall.css'
+//      }
     }
+
+//    viewport: {
+//      width: 520,
+//      scalable: false
+//    }
   });
 
   // Events (JS).
