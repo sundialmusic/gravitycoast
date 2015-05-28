@@ -36,8 +36,8 @@
         media: '(max-width: 414px)',
         href: 'css/phone-portrait.css',
             viewport: {
-            width: 520,
-            scalable: false
+//            width: 520,
+//            scalable: false
         }
       },
 //        
@@ -46,8 +46,8 @@
         media: '(max-height: 414px)',
         href: 'css/phone-landscape.css',
             viewport: {
-            width: 520,
-            scalable: false
+//            width: 520,
+//            scalable: false
         }
       },
         
@@ -67,12 +67,12 @@
 //        media: '(min-height: 780px)',
 //        href: 'css/style-tall.css'
 //      }
-    }
+    },
 
-//    viewport: {
-//      width: 520,
-//      scalable: false
-//    }
+    viewport: {
+      width: 520,
+      scalable: false
+    }
   });
 
   // Events (JS).
