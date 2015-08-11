@@ -172,7 +172,7 @@
     
     #mailing-list {
         text-align: center;
-        width: 489px;
+        width: 280px;
         margin: 0 auto;
         color: #333;
     }
@@ -197,13 +197,13 @@
     border-color: #333;
 }
 
-#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
+#mc_embed_signup form {display:block; position:relative; text-align:left; padding:0px 0 10px 0%}
 #mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.0em;}
 #mc_embed_signup input {height: 30px; border:1px solid #000; -webkit-appearance:none;}
 #mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
 #mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
 #mc_embed_signup input:focus {border-color:#333;}
-#mc_embed_signup .button {clear:both; background-color: #ff9966; border:1px solid #000; border-radius:0px; color: #000; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button {clear:both; background-color: #ff9966; border:1px solid #000; border-radius:0px; color: #000; cursor: pointer; display: inline-block; font-size:11px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
 #mc_embed_signup .button:hover {background-color:#ffcc66;}
 #mc_embed_signup .small-meta {font-size: 11px;}
 #mc_embed_signup .nowrap {white-space:nowrap;}     
@@ -221,15 +221,16 @@
     margin-bottom: 10px;
     float: left;
     height: 33px;
-    font-size: 12pt;
+    font-size: 8pt;
 }
 #mc_embed_signup input.button {
     display:block; 
     width:35%; 
     margin: 0 auto;
-    margin-top: 1px;
+    margin-top: 0px;
     min-width:90px;
     float: right;
+    height: 33px;
 }
 
 #mc_embed_signup div#mce-responses {float:center; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
@@ -281,6 +282,10 @@ input[for=submit]
     max-width: 489px;
     min-width: 489px;
     color: #000;
+}
+
+#widget section#button a {
+    color: #000000;
 }
 
 //***********************************************//
